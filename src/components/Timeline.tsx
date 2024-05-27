@@ -17,6 +17,8 @@ const Timeline: React.FC = () => {
         <div>
           <PulseLoader />
           <PulseLoader />
+          <PulseLoader />
+          <PulseLoader />
         </div>
       ) : (
         <div className="grid gap-3">

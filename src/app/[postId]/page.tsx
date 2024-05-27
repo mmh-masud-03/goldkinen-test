@@ -23,6 +23,8 @@ const PostDetails = () => {
       <div className="w-11/12 md:w-1/2 mx-auto mt-4">
         <SkeletonPulse />
         <SkeletonPulse />
+        <SkeletonPulse />
+        <SkeletonPulse />
       </div>
     );
   }
@@ -33,7 +35,7 @@ const PostDetails = () => {
         <Link href={"/"} className="hidden md:flex">
           <FaArrowLeft className=" mt-5 " />
         </Link>
-        <div className="h-auto md:h-[50vh] w-11/12 md:w-3/4 mx-auto border rounded-md shadow-md bg-slate-100 my-5">
+        <div className="h-[45vh] md:h-[50vh] w-11/12 md:w-3/4 mx-auto border rounded-md shadow-md bg-slate-100 my-5">
           <div className="flex flex-col bg-slate-50 px-4 py-3">
             <h1 className="font-semibold text-lg md:text-xl md:py-3">
               {postDetails.title.toUpperCase()}
@@ -56,7 +58,7 @@ const PostDetails = () => {
             </div>
           </div>
 
-          <div className="mt-3 px-4 pb-7">{postDetails.body}</div>
+          <div className="mt-3 px-4 pb-7 pt-1">{postDetails.body}</div>
         </div>
       </div>
       <div className="mt-4 transition-opacity duration-500 ease-in-out opacity-100 mx-3 md:mx-auto md:w-3/4">
