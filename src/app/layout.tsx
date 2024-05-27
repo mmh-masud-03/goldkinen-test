@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "JSON Timeline",
+  description: "Get the latest updates from the JSON timeline.",
 };
 
 export default function RootLayout({

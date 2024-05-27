@@ -33,7 +33,7 @@ const PostDetails = () => {
         <Link href={"/"} className="hidden md:flex">
           <FaArrowLeft className=" mt-5 " />
         </Link>
-        <div className="h-auto md:h-[70vh] w-11/12 md:w-3/4 mx-auto border rounded-md shadow-md bg-slate-100 my-5">
+        <div className="h-auto md:h-[50vh] w-11/12 md:w-3/4 mx-auto border rounded-md shadow-md bg-slate-100 my-5">
           <div className="flex flex-col bg-slate-50 px-4 py-3">
             <h1 className="font-semibold text-lg md:text-xl md:py-3">
               {postDetails.title.toUpperCase()}
