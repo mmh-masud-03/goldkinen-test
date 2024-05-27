@@ -1,10 +1,24 @@
-export const fetchPosts = async () => {
+export const fetchPosts = async (): Promise<Post[]> => {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const posts = await response.json();
+  const posts: Post[] = await response.json();
+  console.log(posts);
   return posts;
 };
-export const fetchUsers = async () => {
+
+export const fetchUsers = async (): Promise<User[]> => {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
-  const users = await response.json();
+  const users: User[] = await response.json();
   return users;
 };
+
+export interface Post {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+}
+
+export interface User {
+  id: number;
+  name: string;
+}
