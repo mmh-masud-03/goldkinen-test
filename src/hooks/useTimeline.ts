@@ -25,7 +25,6 @@ const useTimeline = (): TimelineItem[] => {
       const posts: Post[] = await fetchPosts();
       const users: User[] = await fetchUsers();
       const allComments: Comment[] = await fetchComments();
-      console.log(allComments);
 
       const timeline: TimelineItem[] = posts
         .map((post) => {
