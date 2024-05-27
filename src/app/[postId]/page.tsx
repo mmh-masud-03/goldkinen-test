@@ -29,7 +29,7 @@ const PostDetails = () => {
   return (
     <div className="flex flex-row items-center">
       <Link href={"/"}>
-        <FaArrowLeft className="ml-4 md:ml-8 mt-5 " />
+        <FaArrowLeft className="mx-4 md:ml-8 mt-5 " />
       </Link>
       <div className="h-auto md:h-[70vh] w-11/12 md:w-1/2 mx-auto border rounded-md shadow-md bg-slate-200 my-5">
         <div className="flex flex-col bg-slate-100 px-4 py-3">
@@ -37,8 +37,8 @@ const PostDetails = () => {
             {postDetails.title.toUpperCase()}
           </h1>
           <div className="flex flex-row justify-between items-center mb-4">
-            <p className="flex flex-row gap-1 text-sm items-baseline">
-              <FaUser size={40} />
+            <p className="flex flex-row gap-1 text-sm items-center">
+              <FaUser size={40} className="rounded-full" />
               by
               <span className="text-xs md:text-base">{postDetails.author}</span>
             </p>
