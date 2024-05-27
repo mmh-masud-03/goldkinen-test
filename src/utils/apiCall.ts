@@ -9,6 +9,13 @@ export interface User {
   id: number;
   name: string;
 }
+export interface Comment {
+  postId: number;
+  id: number;
+  name: string;
+  email: string;
+  body: string;
+}
 export const fetchPosts = async (): Promise<Post[]> => {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
   const posts: Post[] = await response.json();
@@ -35,4 +42,9 @@ export const fetchSingleUser = async (userId: number): Promise<User> => {
   );
   const user: User = await response.json();
   return user;
+};
+export const fetchComments = async (): Promise<Comment[]> => {
+  const response = await fetch("https://jsonplaceholder.typicode.com/comments");
+  const comments: Comment[] = await response.json();
+  return comments;
 };
