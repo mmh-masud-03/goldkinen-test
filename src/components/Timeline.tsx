@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import TimelineItem from "./TimelineItem";
 import useTimeline from "../hooks/useTimeline";
-import PulseLoader from "./PulseLoader";
+import PulseLoader from "./SkeletonPulse";
 
 const Timeline: React.FC = () => {
   const timeline = useTimeline();
