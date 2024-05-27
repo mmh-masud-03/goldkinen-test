@@ -2,7 +2,7 @@ import React from "react";
 
 const SkeletonPulse = () => {
   return (
-    <div className="bg-gray-300 animate-pulse rounded-lg full h-full">
+    <div className="bg-gray-300 animate-pulse rounded-lg full">
       <div className="flex justify-between px-4 py-3">
         <div className="h-6 bg-gray-400 rounded-full w-24"></div>
         <div className="h-6 bg-gray-400 rounded-full w-12"></div>

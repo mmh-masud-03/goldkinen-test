@@ -20,7 +20,10 @@ const Timeline: React.FC = () => {
         Timeline
       </h1>
       {timeline.length === 0 ? (
-        <PulseLoader />
+        <div>
+          <PulseLoader />
+          <PulseLoader />
+        </div>
       ) : (
         <div className="grid gap-3">
           {timeline.map((item, index) => (

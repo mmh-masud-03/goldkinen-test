@@ -18,7 +18,12 @@ const PostDetails = () => {
   const postDetails = usePost(postId);
 
   if (!postDetails) {
-    return <SkeletonPulse />;
+    return (
+      <div className="w-1/2 mx-auto mt-4 ">
+        <SkeletonPulse />
+        <SkeletonPulse />
+      </div>
+    );
   }
 
   return (
