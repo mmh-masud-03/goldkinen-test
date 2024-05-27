@@ -26,12 +26,12 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   };
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 mb-4 ">
+    <div className="bg-slate-200 shadow-md rounded-lg p-4 mb-4 ">
       <div className="flex flex-row justify-between items-center">
         <h3 className="text-xl font-semibold mb-2">{title.toUpperCase()}</h3>
         <button
           onClick={() => router.push(`/${postId}`)}
-          className="text-blue-600"
+          className="text-blue-700"
         >
           View Post
         </button>
@@ -40,7 +40,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
         <FaUser size={35} className="border-2 rounded-full bg-gray-50" />
         <span className="text-xs font-semibold">by {userName}</span>
       </div>
-      <p className="text-gray-700 text-lg">{body}</p>
+      <p className="text-gray-700 text-lg mb-2">{body}</p>
       <button
         onClick={handleShowComments}
         className="text-blue-500 hover:underline"

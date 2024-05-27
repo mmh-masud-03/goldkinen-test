@@ -28,13 +28,13 @@ const PostDetails = () => {
   }
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mb-7">
       <div className="flex flex-row items-center">
-        <Link href={"/"}>
-          <FaArrowLeft className="mx-4 md:ml-8 mt-5 " />
+        <Link href={"/"} className="hidden md:flex">
+          <FaArrowLeft className=" mt-5 " />
         </Link>
-        <div className="h-auto md:h-[70vh] w-11/12 md:w-3/4 mx-auto border rounded-md shadow-md bg-slate-200 my-5">
-          <div className="flex flex-col bg-slate-100 px-4 py-3">
+        <div className="h-auto md:h-[70vh] w-11/12 md:w-3/4 mx-auto border rounded-md shadow-md bg-slate-100 my-5">
+          <div className="flex flex-col bg-slate-50 px-4 py-3">
             <h1 className="font-semibold text-lg md:text-xl md:py-3">
               {postDetails.title.toUpperCase()}
             </h1>
@@ -59,7 +59,7 @@ const PostDetails = () => {
           <div className="mt-3 px-4 pb-7">{postDetails.body}</div>
         </div>
       </div>
-      <div className="mt-4 transition-opacity duration-500 ease-in-out opacity-100 w-3/4 mx-auto">
+      <div className="mt-4 transition-opacity duration-500 ease-in-out opacity-100 mx-3 md:mx-auto md:w-3/4">
         <h3 className="text-lg font-semibold mb-2">Comments</h3>
         <div className="space-y-2">
           {postDetails.comments.map((comment) => (
