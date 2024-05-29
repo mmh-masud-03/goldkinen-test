@@ -24,7 +24,6 @@ const PostDetails = () => {
         <SkeletonPulse />
         <SkeletonPulse />
         <SkeletonPulse />
-        <SkeletonPulse />
       </div>
     );
   }

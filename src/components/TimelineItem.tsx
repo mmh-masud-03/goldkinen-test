@@ -1,4 +1,4 @@
-import { FaUser, FaArrowDown, FaArrowUp } from "react-icons/fa";
+import { FaUser, FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { Comment } from "@/utils/apiCall";
 import { useState } from "react";
 import CommentBox from "./CommentBox";
@@ -47,11 +47,11 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
       >
         {showComments ? (
           <span className="flex flex-row gap-2 items-center">
-            <span>Hide Comments </span> <FaArrowUp />
+            <span>Hide Comments </span> <FaAngleUp size={25} />
           </span>
         ) : (
           <span className="flex flex-row gap-2 items-center">
-            <span>Show Comments </span> <FaArrowDown />
+            <span>Show Comments </span> <FaAngleDown size={25} />
           </span>
         )}
       </button>
